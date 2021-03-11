@@ -6,7 +6,7 @@ Quickly do file related things in Python.
 ```python
 import QuykFile
 
-f = QuykFile('path/to/file.txt')
+f = QuykFile('path/to/file.txt') # Create a QuykFile object which takes a path to a file
 
 print(f.success) # boolean if class file is valid
 
