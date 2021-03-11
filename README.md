@@ -10,6 +10,9 @@ f = QuykFile('path/to/file.txt') # Create a QuykFile object which takes a path t
 
 print(f.success) # boolean if class file is valid
 
+if f.success is False: # assume the file doesn't exist
+	f = QuykFile('path/to/file.txt', force_create=True) # force create the file
+
 text_to_write = 'Hello '
 f.write(text_to_write)
 f.append('World', as_new_line=False) # append to same line

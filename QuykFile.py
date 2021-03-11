@@ -16,7 +16,7 @@ class QuykFile:
 
     """
 
-    def __init__(self, path, as_full_dir=False, force_create=True):
+    def __init__(self, path, as_full_dir=False, force_create=False):
         self.success = False
         self.file_data = {
             'full': '',
